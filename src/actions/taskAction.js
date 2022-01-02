@@ -1,4 +1,4 @@
-import { ADD_TASK } from "../types"
+import { ADD_TASK, REMOVE_TASK } from "../types"
 
 export const addTask = (value) => {
    const newTask = {
@@ -9,5 +9,13 @@ export const addTask = (value) => {
   return {
   type: ADD_TASK,
   payload: newTask
+  }
+}
+
+export const removeTask = (id) => {
+  console.log(id)
+  return {
+  type: REMOVE_TASK,
+  payload: id
   }
 }

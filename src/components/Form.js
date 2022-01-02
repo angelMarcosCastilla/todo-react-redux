@@ -15,6 +15,7 @@ function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(addTask(value));
+    setValue("")
   };
 
   return (
